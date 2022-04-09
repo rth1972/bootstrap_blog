@@ -56,7 +56,13 @@ CREATE TABLE `comments` (
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO comments VALUES("1","2","1","","","like this post","2014-08-12 18:04:18");
-INSERT INTO comments VALUES("2","2","1","","","Really cool, but i have this one problem that i really don\'t know what to do with it.\n\nthis is my code:\n<code>\nHOIHIO\nOIHHHOI\n</code>","2014-08-26 21:13:15");
+INSERT INTO comments VALUES("2","2","1","","","Really cool, but i have this one problem that i really don\'t know what to do with it.
+\n
+\nthis is my code:
+\n<code>
+\nHOIHIO
+\nOIHHHOI
+\n</code>","2014-08-26 21:13:15");
 
 
 CREATE TABLE `members` (
@@ -148,5 +154,3 @@ CREATE TABLE `users` (
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_name_unique` (`user_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
-INSERT INTO users VALUES("1","robin30","06ffd77dd9497e3eb8a2e2152880f5ee702b1682","rth@home.nl","2014-09-18 14:29:03","1");
